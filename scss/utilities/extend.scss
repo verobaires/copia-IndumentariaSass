@@ -1,0 +1,14 @@
+%estilo-hover{
+    color: blanchedalmond;
+    background-color: nth($list: $colores-texto, $n:3 );
+    border: 2px solid nth($list: $colores-texto, $n:3);
+}
+
+%titulo{
+        font-size: xx-large;
+        text-align: justify;
+        font-family: robotos;
+        padding: 15px;
+        margin-left: 10px;
+        color: brown;
+}

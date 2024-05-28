@@ -1,0 +1,10 @@
+@each $color in darksalmon, salmon, wheat 
+    { 
+            .#{$color}{
+                background-color:#{$color};
+                color: black;       
+            }
+        }
+
+
+

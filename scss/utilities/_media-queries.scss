@@ -1,0 +1,120 @@
+
+@media (max-width: 1024px){
+    header {
+        nav
+        { ul{    
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+    //nosotros
+    .display{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    //locales
+    .main-locales{
+        grid-template-columns: repeat(2, 1fr);
+        background-color: $color-body;
+        padding-left: 0;
+        .hijo-grid{ 
+            grid-column: span 2;
+        }
+        .hijo-grid4 {
+            visibility: hidden;
+        
+        }
+    }
+}
+
+@media (max-width: 768px)
+{
+    header{
+        background-size: 100%;
+        nav{
+            ul{
+                display: flex; 
+                flex-direction: column;
+            }
+            }
+        }
+    //index
+
+   //nosotros
+    .main-nosotros{
+        .display{
+            padding-left: 0;
+            .hijo{
+                img{
+                    object-fit: contain;
+                    width: 100%;
+                    height:auto;
+                    margin: 0;
+                }
+            }
+            .hijo-2{
+                p{
+                    text-align:justify;
+                    padding: 3%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    //productos 
+.main-productos{
+    .card-display{
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+        .card{
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            img{  
+                min-width: 0;
+                object-fit: contain;
+            }
+            }
+        }
+}
+    //contacto 
+    .main-contacto{
+        .formulario{
+            grid-template-columns: repeat(1, 1fr);
+            .margen-row{
+                margin-left: 0;
+            }
+        }
+    }
+    // locales
+     //locales
+     .main-locales{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);   
+        align-items:center;
+        justify-content: last baseline;
+        .hijo-grid{
+            grid-column: span 1;
+            height: 20%;    
+        }    
+        .hijo-grid1{
+        text-align:start;
+        justify-content: center;
+
+        }
+        .hijo-grid4{
+            height: 60px;
+        }
+        .titulo-donde-estamos{
+            font-size: 1.7rem;
+        }
+    }  
+
+
+
+}
+

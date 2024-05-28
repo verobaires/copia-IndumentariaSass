@@ -1,0 +1,35 @@
+.main-nosotros{
+    .display{
+        background-color: $color-body;
+        column-gap: 10px;
+        padding-left: 5%;
+        @include display(flex, center,center);
+        .hijo{
+            margin: 10px;
+            box-shadow: 4px -1px 20px 6px rgba(196,187,212,0.75);
+            -webkit-box-shadow: 4px -1px 20px 6px rgba(196,187,212,0.75);
+            -moz-box-shadow: 4px -1px 20px 6px rgba(196,187,212,0.75);
+            img{
+                width:max-content;
+                height: 400px;
+            }
+        }
+        .hijo-2{
+            font-family: robotos;
+            margin: 10px;
+            box-shadow: 4px -1px 20px 6px rgba(196,187,212,0.75);
+            -webkit-box-shadow: 4px -1px 20px 6px rgba(196,187,212,0.75);
+            -moz-box-shadow: 4px -1px 20px 6px rgba(196,187,212,0.75);
+            .nosotros{
+                padding-left: 10px;
+                padding-top: 10px;
+                font-size: large;
+                font-style: italic;
+            }
+            p{
+                padding: 10px;
+            }
+        }
+    }
+    
+}

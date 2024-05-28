@@ -1,0 +1,8 @@
+@mixin display($display, $align-items, $justify-content: null)
+    { 
+        display: $display;
+        align-items: $align-items;
+        @if $justify-content != null{
+            justify-content: $justify-content;
+        }  
+    }

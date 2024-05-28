@@ -1,0 +1,20 @@
+.main-locales{
+    background-color: $color-body;
+    @include display(grid, center, null);
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10px;
+    justify-items: center;
+    font-family: robotos;
+    .hijo-grid{
+        grid-column: span 3;
+       h1{ @extend %titulo;}
+
+    }
+    .hijo-grid1{
+        color: nth($list: $colores-texto, $n:7 );
+    }
+    .hijo-grid4{
+        place-self: flex-start center;
+        padding-bottom: 10px;
+    }
+}

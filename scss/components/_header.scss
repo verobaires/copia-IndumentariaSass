@@ -1,0 +1,35 @@
+header{
+    top: 0px;
+    z-index: 1;
+    padding: 30px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-attachment: fixed;
+    margin-bottom: 2px;
+    @include display(flex,center,space-evenly);
+    // display: flex;
+    // justify-content: space-evenly;
+    // align-items:center;
+    img{
+        width: 50px;
+    }
+    nav {
+        ul{ 
+        list-style: none;
+        text-transform: uppercase; 
+        display: flex; 
+        column-gap: 100px; 
+        row-gap: 30px;
+            li{
+                a{   
+                    &:hover {@extend %estilo-hover};
+                    color: black;
+                    text-decoration: none;
+                    font-family: robotos;
+                    font-size: larger;}
+            }
+            }
+        }
+
+}

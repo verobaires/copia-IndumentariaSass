@@ -1,0 +1,28 @@
+.main-contacto{
+    .formulario{
+        @include display(grid,center,center);
+        grid-template-columns: repeat(2, 1fr);    
+        background-color: $color-body;   
+        color: nth($list: $colores-texto, $n:6);    
+        padding: 40px;
+
+            .margen-row{
+                margin-left: 120px;
+                h1{
+                    font-size: x-large;
+                }
+
+                }
+            .form-row{
+                .form-group{
+                    textarea{
+                        width: 95%;
+                        height: 228px;
+                        margin-top: 50px;
+                    }
+                }
+            }
+
+            }
+
+    }
